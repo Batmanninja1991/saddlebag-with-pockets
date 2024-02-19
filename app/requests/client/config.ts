@@ -1,4 +1,4 @@
-const defaultAddress = `http://api.saddlebagexchange.com`
+const defaultAddress = `http://staging.saddlebagexchange.com`
 // const defaultAddress = `http://api.saddlebag.exchange`
 
 export const address = defaultAddress
