@@ -3,13 +3,6 @@ import TileLink from '~/components/Common/TileLink'
 
 const recommendedQueries = [
   {
-    name: 'Patreon',
-    description:
-      'Join our Patreon Supporters to access the best tools we have!',
-    href: 'https://www.patreon.com/indopan',
-    external: true
-  },
-  {
     name: 'Final Fantasy XIV',
     description:
       'Tools for Cross-Server reselling, Market Overviews, Crafting Profit Simulation, Shopping Lists, Alerts and More!',
@@ -20,6 +13,18 @@ const recommendedQueries = [
     description:
       'Tools for Cross-Realm Trading, Market Overviews, Shortage Finders, and our Best Deals Search!',
     href: '/wow'
+  },
+  // {
+  //   name: 'Blogs',
+  //   description: 'See our guides and blog posts.',
+  //   href: '/blog'
+  // },
+  {
+    name: 'Patreon',
+    description:
+      'Join our Patreon Supporters to access the best tools we have!',
+    href: 'https://www.patreon.com/indopan',
+    external: true
   }
 ]
 
@@ -34,7 +39,7 @@ export default function Index() {
               Saddlebag Exchange
             </h1>
             <p className="text-md text-slate-700 dark:text-gray-300">
-              Welcome to the saddlebag exchange. Find helpful tools to get ahead
+              Welcome to the Saddlebag Exchange. Find helpful tools to get ahead
               in your favourite MMO's.
             </p>
             <div

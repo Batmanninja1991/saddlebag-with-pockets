@@ -98,6 +98,7 @@ export const loader: LoaderFunction = async ({ request, context }) => {
 
   return json<LoaderData>({
     site_name: (context.SITE_NAME as string) ?? 'Saddlebag',
+    // site_name: 'FFXIV Marketboard',
     data_center,
     world,
     wowRealm: server,
@@ -159,7 +160,7 @@ export const meta: MetaFunction = ({ data }) => {
     title: site_name,
     viewport: 'width=device-width,initial-scale=1',
     description:
-      'SaddleBag Exchange: An MMO market data analysis engine for the WoW, FFXIV and more!'
+      'SaddleBag Exchange: An MMO market data analysis engine for the WoW Auctionhouse, FFXIV Marketboard and more!'
   }
 }
 

@@ -16,15 +16,22 @@ const recommendedQueries = [
     description:
       'Find the best deals on your server and region wide with our Best Deals search!',
     Icon: DocumentSearchIcon,
-    href: '/wow/best-deals'
+    href: '/wow/best-deals/recommended'
   },
   {
     name: 'Ultra Fast Azeroth Auction Assassin Sniper',
     description:
       'Try our standalone Azeroth Auction Assassin Sniper, designed to snipe across all realms for the best deals seconds after the Blizzard AH API updates so you get there first!',
     Icon: DocumentSearchIcon,
-    href: 'https://github.com/ff14-advanced-market-search/AzerothAuctionAssassin/releases',
+    href: 'https://github.com/ff14-advanced-market-search/AzerothAuctionAssassin/releases/latest',
     external: true
+  },
+  {
+    name: 'Price Sniper and Price Spike Alerts',
+    description:
+      'Alerts you when prices for items go above or below a price you pick! For one server and region wide commodities.',
+    Icon: DocumentSearchIcon,
+    href: '/wow/price-alert'
   },
   {
     name: 'Upload Timers',
@@ -54,25 +61,11 @@ const recommendedQueries = [
     href: '/wow/marketshare'
   },
   {
-    name: 'Dragonflight Commodity Shortage Futures',
-    description:
-      'Find Commodity Shortages and Price Spikes BEFORE they happen and be there first!',
-    Icon: DocumentSearchIcon,
-    href: '/wow/shortage-predictor'
-  },
-  {
     name: 'Legacy Marketshare Overview',
     description:
       'Find out what Legacy items are actually selling and what are the best items to sell. Shows the top 200 items matching your search.',
     Icon: DocumentSearchIcon,
     href: '/wow/legacy-marketshare'
-  },
-  {
-    name: 'Price Sniper and Price Spike Alerts',
-    description:
-      'Alerts you when prices for items go above or below a price you pick!',
-    Icon: DocumentSearchIcon,
-    href: '/wow/price-alert'
   },
   {
     name: 'Region Wide Undercut Checker',
@@ -94,6 +87,13 @@ const recommendedQueries = [
       'Search for items that can be bought cheaply on a your home server and sold for a profit when transfering realms.',
     Icon: DocumentSearchIcon,
     href: '/wow/full-scan'
+  },
+  {
+    name: 'Dragonflight Commodity Shortage Futures',
+    description:
+      'Find Commodity Shortages and Price Spikes BEFORE they happen and be there first!',
+    Icon: DocumentSearchIcon,
+    href: '/wow/shortage-predictor'
   },
   {
     name: 'Local Realm Shortage Finder',

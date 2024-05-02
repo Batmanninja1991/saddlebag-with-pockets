@@ -202,20 +202,15 @@ const navGroups: Array<{
         external: true
       },
       {
-        name: 'Best Deals',
-        href: '/wow/best-deals',
-        icon: ExclamationCircleIcon
-      },
-      {
         name: 'Azeroth Auction Assassin Sniper',
-        href: 'https://github.com/ff14-advanced-market-search/AzerothAuctionAssassin/releases',
+        href: 'https://github.com/ff14-advanced-market-search/AzerothAuctionAssassin/releases/latest',
         icon: DocumentSearchIcon,
         external: true
       },
       {
-        name: 'Upload Timers',
-        href: '/wow/upload-timers',
-        icon: ClockIcon
+        name: 'Best Deals',
+        href: '/wow/best-deals/recommended',
+        icon: ExclamationCircleIcon
       },
       {
         name: 'Shopping List',
@@ -228,24 +223,14 @@ const navGroups: Array<{
         icon: DocumentSearchIcon
       },
       {
-        name: 'Dragonflight Marketshare Overview',
-        href: '/wow/marketshare',
-        icon: ChartSquareBarIcon
-      },
-      {
-        name: 'Dragonflight Commodity Shortage Futures',
-        href: 'wow/shortage-predictor',
-        icon: ChartSquareBarIcon
-      },
-      {
-        name: 'Legacy Marketshare Overview',
-        href: '/wow/legacy-marketshare',
-        icon: ChartSquareBarIcon
-      },
-      {
         name: 'Price Alert Input Generator',
         href: 'wow/price-alert',
         icon: PencilAltIcon
+      },
+      {
+        name: 'Upload Timers',
+        href: '/wow/upload-timers',
+        icon: ClockIcon
       },
       {
         name: 'Region Wide Undercut Checker',
@@ -259,8 +244,29 @@ const navGroups: Array<{
         external: true
       },
       {
+        name: 'TSM to AAA converter Addon',
+        href: 'https://www.curseforge.com/wow/addons/aaatransformer/latest',
+        icon: DocumentSearchIcon,
+        external: true
+      },
+      {
+        name: 'Dragonflight Marketshare Overview',
+        href: '/wow/marketshare',
+        icon: ChartSquareBarIcon
+      },
+      {
+        name: 'Legacy Marketshare Overview',
+        href: '/wow/legacy-marketshare',
+        icon: ChartSquareBarIcon
+      },
+      {
         name: 'Server Transfer Trading Search',
         href: '/wow/full-scan',
+        icon: ChartSquareBarIcon
+      },
+      {
+        name: 'Dragonflight Commodity Shortage Futures',
+        href: 'wow/shortage-predictor',
         icon: ChartSquareBarIcon
       },
       {
@@ -497,6 +503,10 @@ export const Sidebar: FC<Props> = ({ children, data }) => {
                       FINAL FANTASY is a registered trademark of Square Enix
                       Holdings Co., Ltd.
                       <br />© SQUARE ENIX CO., LTD. All Rights Reserved.
+                      <br />
+                      WORLD OF WARCRAFT is a registered trademark of Blizzard
+                      Entertainment, Inc.
+                      <br />© BLIZZARD ENTERTAINMENT, INC. All Rights Reserved.
                     </p>
                   </nav>
                 </div>
@@ -584,6 +594,10 @@ export const Sidebar: FC<Props> = ({ children, data }) => {
                 FINAL FANTASY is a registered trademark of Square Enix Holdings
                 Co., Ltd.
                 <br />© SQUARE ENIX CO., LTD. All Rights Reserved.
+                <br />
+                WORLD OF WARCRAFT is a registered trademark of Blizzard
+                Entertainment, Inc.
+                <br />© BLIZZARD ENTERTAINMENT, INC. All Rights Reserved.
               </p>
               <div id="ezoic-pub-ad-placeholder-118" />
             </nav>
