@@ -313,6 +313,11 @@ const navGroups: Array<{
         href: 'https://drive.google.com/file/d/1R9J51hNuwMfPuLi0u1snaLvQnJiZ2jRo/view?usp=sharing',
         external: true,
         icon: GithubIcon
+      },
+      {
+        name: 'blog',
+        href: '/blog',
+        icon: DocumentSearchIcon
       }
     ]
   }
@@ -690,7 +695,7 @@ export const Sidebar: FC<Props> = ({ children, data }) => {
                     <img
                       className="h-8 w-8 rounded-full shrink-0"
                       src="/images/tiny-chocobo.png"
-                      alt=""
+                      alt="tiny-chocobo"
                     />
                   </Menu.Button>
                 </div>

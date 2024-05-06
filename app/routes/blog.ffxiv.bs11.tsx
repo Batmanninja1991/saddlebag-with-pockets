@@ -1,10 +1,23 @@
+// Overwrite default meta in the root.tsx
+export const meta: MetaFunction = () => {
+  return {
+    charset: 'utf-8',
+    viewport: 'width=device-width,initial-scale=1',
+    title: 'Investment Portfolio for Final Fantasy XIV and World of Warcraft',
+    description:
+      'Explore strategies for building an investment portfolio in Final Fantasy XIV and World of Warcraft.',
+    customHeading:
+      'Optimize Your Gaming Investments: FFXIV and WoW Portfolio Strategies'
+  }
+}
+
 const howtocrossservertradeinffxiv = () => {
   return (
     <div className={`m-12`}>
       <main className="flex-1">
-        <p>
+        <h1>
           <strong> Leveraging Social Trading Platforms</strong>
-        </p>
+        </h1>
         <p>
           Social trading platforms have emerged as powerful tools for gil-making
           in Final Fantasy XIV and gold-making in World of Warcraft. These

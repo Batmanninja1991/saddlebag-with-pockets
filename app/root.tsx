@@ -97,7 +97,7 @@ export const loader: LoaderFunction = async ({ request, context }) => {
   const { server, region } = getWoWSessionData()
 
   return json<LoaderData>({
-    site_name: (context.SITE_NAME as string) ?? 'Saddlebag',
+    site_name: (context.SITE_NAME as string) ?? 'Saddlebag Exchange',
     // site_name: 'FFXIV Marketboard',
     data_center,
     world,
@@ -158,6 +158,7 @@ export const meta: MetaFunction = ({ data }) => {
   return {
     charset: 'utf-8',
     title: site_name,
+    // title: `${site_name}: FFXIV marketboard prices, WoW Auctionhouse`,
     viewport: 'width=device-width,initial-scale=1',
     description:
       'SaddleBag Exchange: An MMO market data analysis engine for the WoW Auctionhouse, FFXIV Marketboard and more!'
@@ -217,6 +218,7 @@ function App() {
   return (
     <html lang="en" className={classNames(`h-full`, theme || '')}>
       <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

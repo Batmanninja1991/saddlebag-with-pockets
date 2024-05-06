@@ -1,7 +1,23 @@
+// Overwrite default meta in the root.tsx
+export const meta: MetaFunction = () => {
+  return {
+    charset: 'utf-8',
+    viewport: 'width=device-width,initial-scale=1',
+    title: 'Saddlebag Exchange: FFXIV & WoW Gil Strategies 2',
+    description:
+      'Explore advanced strategies for maximizing Gil in Final Fantasy XIV and gold in World of Warcraft.',
+    customHeading:
+      'Mastering Gil and Gold: Advanced Strategies from Saddlebag Exchange'
+  }
+}
+
 const HowtoCrossServerTradeinFFXIV = () => {
   return (
     <div className={`m-12`}>
       <main className="flex-1">
+        <h1 className={`text-2xl`}>
+          Mastering Gil and Gold: Advanced Strategies from Saddlebag Exchange
+        </h1>
         <p>
           When it comes to making gil in Final Fantasy XIV using the
           marketboard, there are several strategies you can employ. One method

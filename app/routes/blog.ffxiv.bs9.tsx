@@ -1,10 +1,23 @@
+// Overwrite default meta in the root.tsx
+export const meta: MetaFunction = () => {
+  return {
+    charset: 'utf-8',
+    viewport: 'width=device-width,initial-scale=1',
+    title: 'Exploring Specialized Markets for Gil Making in Final Fantasy XIV',
+    description:
+      'Discover lucrative opportunities and strategies for capitalizing on specialized markets to maximize your Gil making potential in Final Fantasy XIV.',
+    customHeading:
+      'Unveiling Lucrative Markets: Specialized Gil Making in Final Fantasy XIV'
+  }
+}
+
 const howtocrossservertradeinffxiv = () => {
   return (
     <div classname={`m-12`}>
       <main classname="flex-1">
-        <p>
-          "Exploring Specialized Markets for Gil Making in Final Fantasy XIV"
-        </p>
+        <h1>
+          Exploring Specialized Markets for Gil Making in Final Fantasy XIV
+        </h1>
         <p>
           In the bustling markets of Eorzea, where adventurers seek fame and
           fortune, specialized markets offer unique opportunities for savvy

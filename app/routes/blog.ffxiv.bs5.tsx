@@ -1,7 +1,20 @@
+// Overwrite default meta in the root.tsx
+export const meta: MetaFunction = () => {
+  return {
+    charset: 'utf-8',
+    viewport: 'width=device-width,initial-scale=1',
+    title: 'Gold & Gil Mastery: WoW & FFXIV',
+    description:
+      'Discover advanced strategies for mastering gold in World of Warcraft and gil in Final Fantasy XIV.',
+    customHeading: 'Mastering Gold & Gil: Advanced Strategies for WoW & FFXIV'
+  }
+}
+
 const HowtoCrossServerTradeinFFXIV = () => {
   return (
     <div className={`m-12`}>
       <main className="flex-1">
+        <h1>'Gold & Gil Mastery: WoW & FFXIV'</h1>
         <p>
           Maximizing Goldmaking in World of Warcraft: Unleash the Power of the
           Auction House Are you a seasoned adventurer looking to bolster your

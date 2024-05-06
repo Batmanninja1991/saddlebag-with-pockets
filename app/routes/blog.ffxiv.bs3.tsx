@@ -1,8 +1,20 @@
+// Overwrite default meta in the root.tsx
+export const meta: MetaFunction = () => {
+  return {
+    charset: 'utf-8',
+    viewport: 'width=device-width,initial-scale=1',
+    title: 'Unlocking MMORPG Economies: Strategies for WoW & FFXIV',
+    description:
+      'Discover effective strategies for unlocking the potential of MMORPG economies in World of Warcraft and Final Fantasy XIV.',
+    customHeading: 'Maximizing MMORPG Economies: Strategies for WoW & FFXIV'
+  }
+}
+
 const HowtoCrossServerTradeinFFXIV = () => {
   return (
     <div className={`m-12`}>
       <main className="flex-1">
-        <h3>Introduction:</h3>
+        <h1>Unlocking MMORPG Economies: Strategies for WoW & FFXIV</h1>
 
         <p>
           The virtual economies of massively multiplayer online role-playing
