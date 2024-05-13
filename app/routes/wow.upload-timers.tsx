@@ -21,6 +21,11 @@ export const meta: MetaFunction = () => {
   }
 }
 
+// Overwrite default links in the root.tsx
+export const links: LinksFunction = () => [
+  { rel: 'canonical', href: 'https://saddlebagexchange.com/wow/upload-timers' }
+]
+
 export const loader: LoaderFunction = async () => {
   return UploadTimers()
 }
@@ -40,7 +45,7 @@ const Index = () => {
         <PageWrapper>
           <h1>WoW api data upload timers</h1>
           <SmallTable
-            title="Upload Timers"
+            // title="Upload Timers"
             description="Shows when the WoW auction house data was last uploaded."
             columnList={columnList}
             data={results.data}

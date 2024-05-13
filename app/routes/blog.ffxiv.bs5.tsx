@@ -4,11 +4,14 @@ export const meta: MetaFunction = () => {
     charset: 'utf-8',
     viewport: 'width=device-width,initial-scale=1',
     title: 'Gold & Gil Mastery: WoW & FFXIV',
-    description:
-      'Discover advanced strategies for mastering gold in World of Warcraft and gil in Final Fantasy XIV.',
+    description: 'Mastering gold in WoW and gil in FFXIV.',
     customHeading: 'Mastering Gold & Gil: Advanced Strategies for WoW & FFXIV'
   }
 }
+
+export const links: LinksFunction = () => [
+  { rel: 'canonical', href: 'https://saddlebagexchange.com/blog/ffxiv/bs5' }
+]
 
 const HowtoCrossServerTradeinFFXIV = () => {
   return (

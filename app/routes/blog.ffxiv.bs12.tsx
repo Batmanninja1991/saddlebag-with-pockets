@@ -3,12 +3,15 @@ export const meta: MetaFunction = () => {
   return {
     charset: 'utf-8',
     viewport: 'width=device-width,initial-scale=1',
-    title: 'Innovation in MMO Economies',
+    title: 'Unveiling the Future: Innovation in MMO Economies',
     description:
-      'Explore key trends and opportunities in MMO economies, focusing on innovation and its impact on virtual markets.',
-    customHeading: 'Unveiling the Future: Innovation in MMO Economies'
+      'Explore key trends and opportunities in MMO economies, its impact on virtual markets.'
   }
 }
+
+export const links: LinksFunction = () => [
+  { rel: 'canonical', href: 'https://saddlebagexchange.com/blog/ffxiv/bs12' }
+]
 
 const howtocrossservertradeinffxiv = () => {
   return (

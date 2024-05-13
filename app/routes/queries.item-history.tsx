@@ -10,7 +10,7 @@ import type { ItemSelected } from '~/components/Common/ItemSelect'
 import { useEffect, useState } from 'react'
 import SmallFormContainer from '~/components/form/SmallFormContainer'
 import Results from '~/components/FFXIVResults/item-history/Results'
-import { PageWrapper, Title } from '~/components/Common'
+import { PageWrapper, TitleH2 } from '~/components/Common'
 import { useDispatch } from 'react-redux'
 import { setItemHistory } from '~/redux/reducers/queriesSlice'
 import { useTypedSelector } from '~/redux/useTypedSelector'
@@ -25,6 +25,13 @@ export const meta: MetaFunction = () => {
     description: 'Saddlebag Exchange: ffxiv history analysis'
   }
 }
+
+export const links: LinksFunction = () => [
+  {
+    rel: 'canonical',
+    href: 'https://saddlebagexchange.com/queries/item-history'
+  }
+]
 
 const validateInput = ({
   itemId,
@@ -185,7 +192,7 @@ const Index = () => {
         )}
         {resultTitle && (
           <div className="max-w-4xl mx-auto px-4">
-            <Title title={resultTitle} />
+            <TitleH2 title={resultTitle} />
           </div>
         )}
         {itemHistory && 'average_ppu' in itemHistory && (

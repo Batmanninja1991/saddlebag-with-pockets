@@ -27,7 +27,6 @@ const validateFormInput = z.object({
   minimum_profit_amount: parseStringToNumber,
   minimum_stack_size: parseStringToNumber,
   world: z.string(),
-  universalis_list_uid: z.string().optional(),
   hq_only: parseCheckboxBoolean,
   region_wide: parseCheckboxBoolean,
   include_vendor: parseCheckboxBoolean,
@@ -43,13 +42,27 @@ const inputMap = {
   minimum_profit_amount: 'Minimum profit amount',
   minimum_stack_size: 'Minimum stack size',
   world: 'Data Center',
-  universalis_list_uid: 'Universalis List',
   hq_only: 'HQ Only',
   region_wide: 'Region Wide',
   include_vendor: 'Include vendor',
   out_of_stock: 'Out of stock',
   filters: 'Filters'
 }
+
+// Overwrite default meta in the root.tsx
+export const meta: MetaFunction = () => {
+  return {
+    charset: 'utf-8',
+    viewport: 'width=device-width,initial-scale=1',
+    title: 'Saddlebag Exchange: FFXIV reselling trade search',
+    description:
+      'Find what items in FFXIV are the best to buy from other servers or from vendors and sell on your local ffxiv marketboard!'
+  }
+}
+
+export const links: LinksFunction = () => [
+  { rel: 'canonical', href: 'https://saddlebagexchange.com/queries/full-scan' }
+]
 
 export const action: ActionFunction = async ({ request }) => {
   const formData = await request.formData()
@@ -72,23 +85,6 @@ export const action: ActionFunction = async ({ request }) => {
     console.log('catch', err)
     return err
   })
-}
-
-// Overwrite default meta in the root.tsx
-export const meta: MetaFunction = () => {
-  return {
-    charset: 'utf-8',
-    viewport: 'width=device-width,initial-scale=1',
-    title: 'Saddlebag Exchange: FFXIV reselling trade search',
-    description:
-      'Find what items in FFXIV are the best to buy from other servers or from vendors and sell on your local ffxiv marketboard!',
-    links: [
-      {
-        rel: 'canonical',
-        href: `https://saddlebagexchange.com/queries/full-scan`
-      }
-    ]
-  }
 }
 
 export const loader: LoaderFunction = ({ request }) => {

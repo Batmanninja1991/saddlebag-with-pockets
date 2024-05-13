@@ -11,7 +11,7 @@ import type { ItemSelected } from '~/components/form/select/ItemSelect'
 import ItemSelect from '~/components/form/select/ItemSelect'
 import { useEffect, useState } from 'react'
 import SmallFormContainer from '~/components/form/SmallFormContainer'
-import { PageWrapper, Title } from '~/components/Common'
+import { PageWrapper, TitleH2 } from '~/components/Common'
 import { useDispatch } from 'react-redux'
 import { setListings } from '~/redux/reducers/queriesSlice'
 import { useTypedSelector } from '~/redux/useTypedSelector'
@@ -27,6 +27,10 @@ export const meta: MetaFunction = () => {
     description: 'Saddlebag Exchange: ffxiv listings analysis'
   }
 }
+
+export const links: LinksFunction = () => [
+  { rel: 'canonical', href: 'https://saddlebagexchange.com/queries/listings' }
+]
 
 const validateInput = ({
   itemId,
@@ -146,7 +150,7 @@ const Index = () => {
         </div>
         {listings && listings.listings && listings.listings.length > 0 && (
           <>
-            {resultTitle && <Title title={resultTitle} />}
+            {resultTitle && <TitleH2 title={resultTitle} />}
             <Results data={listings} />
           </>
         )}

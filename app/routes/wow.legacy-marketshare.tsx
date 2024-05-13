@@ -98,18 +98,19 @@ export const meta: MetaFunction = () => {
   return {
     charset: 'utf-8',
     viewport: 'width=device-width,initial-scale=1',
-    title:
-      'Saddlebag Exchange: WoW Legacy marketshare, most gold on auctionhouse',
+    title: 'Saddlebag Exchange: WoW Legacy most gold',
     description:
-      'Find what legacy content items make the most gold in WoW, sell the most in WoW, sell the fastest in in WoW and have the best market gaps!',
-    links: [
-      {
-        rel: 'canonical',
-        href: `https://saddlebagexchange.com/wow/legacy-marketshare`
-      }
-    ]
+      'Find what legacy content items make the most gold in WoW, sell the most in WoW, sell the fastest in in WoW and have the best market gaps!'
   }
 }
+
+// Overwrite default links in the root.tsx
+export const links: LinksFunction = () => [
+  {
+    rel: 'canonical',
+    href: 'https://saddlebagexchange.com/wow/legacy-marketshare'
+  }
+]
 
 export const loader: LoaderFunction = async ({ request }) => {
   const { getWoWSessionData } = await getUserSessionData(request)

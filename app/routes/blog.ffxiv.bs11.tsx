@@ -3,13 +3,17 @@ export const meta: MetaFunction = () => {
   return {
     charset: 'utf-8',
     viewport: 'width=device-width,initial-scale=1',
-    title: 'Investment Portfolio for Final Fantasy XIV and World of Warcraft',
+    title: 'Investment Portfolio for FFXIV and WoW',
     description:
-      'Explore strategies for building an investment portfolio in Final Fantasy XIV and World of Warcraft.',
+      'Explore strategies for building an investment portfolio in FFXIV and WoW.',
     customHeading:
       'Optimize Your Gaming Investments: FFXIV and WoW Portfolio Strategies'
   }
 }
+
+export const links: LinksFunction = () => [
+  { rel: 'canonical', href: 'https://saddlebagexchange.com/blog/ffxiv/bs11' }
+]
 
 const howtocrossservertradeinffxiv = () => {
   return (

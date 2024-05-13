@@ -10,6 +10,13 @@ export const meta: MetaFunction = () => {
   }
 }
 
+export const links: LinksFunction = () => [
+  {
+    rel: 'canonical',
+    href: 'https://saddlebagexchange.com/blog/wow/crossrealm1'
+  }
+]
+
 const HowtoCrossServerTradeinFFXIV = () => {
   return (
     <div className={`m-12`}>
@@ -95,7 +102,7 @@ const HowtoCrossServerTradeinFFXIV = () => {
           </li>
           <li>
             An{' '}
-            <a href="https://temp.saddlebagexchange.com/petimport">
+            <a href="https://temp.saddlebagexchange.com/petexport">
               &quot;Import Search&quot;
             </a>{' '}
             for finding the best items to buy on other servers and sell on your

@@ -3,14 +3,17 @@ export const meta: MetaFunction = () => {
   return {
     charset: 'utf-8',
     viewport: 'width=device-width,initial-scale=1',
-    title:
-      'Economic Policies on MMO Economies: A Comprehensive Analysis',
+    title: 'Economic Policies on MMO Economies',
     description:
       'Explore the impact of economic policies on MMO economies through a comprehensive analysis.',
     customHeading:
       'Navigating Economic Landscapes: The Impact of Policies on MMO Economies'
   }
 }
+
+export const links: LinksFunction = () => [
+  { rel: 'canonical', href: 'https://saddlebagexchange.com/blog/ffxiv/bs14' }
+]
 
 const howtocrossservertradeinffxiv = () => {
   return (

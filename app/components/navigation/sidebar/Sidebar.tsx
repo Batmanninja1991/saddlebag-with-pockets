@@ -260,6 +260,11 @@ const navGroups: Array<{
         icon: ChartSquareBarIcon
       },
       {
+        name: 'Pet Marketshare Overview',
+        href: '/wow/pet-marketshare',
+        icon: ChartSquareBarIcon
+      },
+      {
         name: 'Server Transfer Trading Search',
         href: '/wow/full-scan',
         icon: ChartSquareBarIcon
@@ -317,6 +322,28 @@ const navGroups: Array<{
       {
         name: 'blog',
         href: '/blog',
+        icon: DocumentSearchIcon
+      },
+      {
+        name: 'List of all WoW Items',
+        href: '/wow/itemlist',
+        icon: DocumentSearchIcon
+      },
+      {
+        name: 'List of all FFXIV Items',
+        href: '/ffxiv/itemlist',
+        icon: DocumentSearchIcon
+      },
+      {
+        name: 'Fandom',
+        href: 'https://ffxivmarketboard.fandom.com/wiki/Ffxivmarketboard_Wiki',
+        external: true,
+        icon: DocumentSearchIcon
+      },
+      {
+        name: 'Discord Webpage',
+        href: 'https://discord.com/servers/saddlebag-exchange-973380473281724476',
+        external: true,
         icon: DocumentSearchIcon
       }
     ]

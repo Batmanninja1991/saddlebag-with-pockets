@@ -73,18 +73,16 @@ export const meta: MetaFunction = () => {
   return {
     charset: 'utf-8',
     viewport: 'width=device-width,initial-scale=1',
-    title:
-      'WoW best selling, WoW Export, find the best realm to sell any item on!',
+    title: 'WoW best selling, find the best realm to sell any item on!',
     description:
-      'Find the best realm to sell any item on! Compare price data too wow realm population data.',
-    links: [
-      {
-        rel: 'canonical',
-        href: `https://saddlebagexchange.com/wow/export-search`
-      }
-    ]
+      'Find the best realm to sell any item on! Wow realm population data.'
   }
 }
+
+// Overwrite default links in the root.tsx
+export const links: LinksFunction = () => [
+  { rel: 'canonical', href: 'https://saddlebagexchange.com/wow/export-search' }
+]
 
 export const loader: LoaderFunction = async ({ request }) => {
   const params = new URL(request.url).searchParams

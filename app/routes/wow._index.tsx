@@ -7,10 +7,16 @@ export const meta: MetaFunction = () => {
   return {
     charset: 'utf-8',
     viewport: 'width=device-width,initial-scale=1',
-    title: 'Saddlebag Exchange: wow tools',
-    description: 'Saddlebag Exchange: wow tools'
+    title: 'Saddlebag Exchange: world of Warcraft auctionhouse tools',
+    description:
+      'tools to get an advantage in the world of Warcraft auctionhouse'
   }
 }
+
+// Overwrite default links in the root.tsx
+export const links: LinksFunction = () => [
+  { rel: 'canonical', href: 'https://saddlebagexchange.com/wow' }
+]
 
 const recommendedQueries = [
   // {
@@ -76,6 +82,13 @@ const recommendedQueries = [
       'Find out what Legacy items are actually selling and what are the best items to sell. Shows the top 200 items matching your search.',
     Icon: DocumentSearchIcon,
     href: '/wow/legacy-marketshare'
+  },
+  {
+    name: 'Pet Marketshare Overview',
+    description:
+      'Find out what pets are actually selling and what are the best pets to sell.',
+    Icon: DocumentSearchIcon,
+    href: '/wow/pet-marketshare'
   },
   {
     name: 'Region Wide Undercut Checker',
