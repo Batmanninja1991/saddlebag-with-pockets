@@ -8,7 +8,8 @@ export const meta: MetaFunction = () => {
     viewport: 'width=device-width,initial-scale=1',
     description:
       'SaddleBag Exchange: An MMO market data analysis engine for the WoW Auctionhouse, FFXIV Marketboard and more! ff14 market board, ff14 marketboard prices, ffxiv market board, ffxiv market board prices, ffxiv marketboard, xiv analysis, wow Auctionhouse, wow goldmaking, wow gold',
-    customHeading: 'Explore MMO Market Data with SaddleBag Exchange'
+    customHeading: 'Explore MMO Market Data with SaddleBag Exchange',
+    "insight-app-sec-validation": "2e8edc92-0bc0-4a02-ac3f-927f6ec39f1a"
   }
 }
 
